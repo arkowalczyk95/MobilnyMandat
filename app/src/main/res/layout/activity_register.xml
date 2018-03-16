@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kowalczyk.arek.mobilnymandat.RegisterActivity">
+
+    <EditText
+        android:id="@+id/arTextName"
+        android:layout_width="368dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Imię i Nazwisko"
+        android:inputType="textPersonName"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/arToolbar"
+        android:layout_alignLeft="@+id/arTextId"
+        android:layout_alignStart="@+id/arTextId" />
+
+    <EditText
+        android:id="@+id/arTextPass"
+        android:layout_width="368dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Hasło"
+        android:inputType="textPassword"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/arTextLogin"
+        android:layout_alignLeft="@+id/arTextLogin"
+        android:layout_alignStart="@+id/arTextLogin" />
+
+    <EditText
+        android:id="@+id/arTextLogin"
+        android:layout_width="368dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Login"
+        android:inputType="textPersonName"
+        android:layout_marginTop="20dp"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/arTextPolice"
+        android:layout_alignLeft="@+id/arTextPolice"
+        android:layout_alignStart="@+id/arTextPolice" />
+
+    <Button
+        android:id="@+id/arButtonReg"
+        android:layout_width="368dp"
+        android:layout_height="50dp"
+        android:hint="Imię i Nazwisko"
+        android:text="ZAREJESTRUJ"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="421dp"
+        android:layout_marginBottom="78dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/arTextId"
+        android:layout_width="368dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="ID"
+        android:inputType="textPersonName"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/arTextName"
+        android:layout_alignLeft="@+id/arButtonReg"
+        android:layout_alignStart="@+id/arButtonReg" />
+
+    <EditText
+        android:id="@+id/arTextPolice"
+        android:layout_width="368dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Komenda"
+        android:inputType="textPersonName"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/arTextId"
+        android:layout_alignLeft="@+id/arTextId"
+        android:layout_alignStart="@+id/arTextId" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/arToolbar"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="?attr/actionBarTheme"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/arText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Zarejestruj się"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.Toolbar>
+
+</RelativeLayout>

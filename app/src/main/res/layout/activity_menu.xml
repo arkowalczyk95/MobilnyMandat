@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.kowalczyk.arek.mobilnymandat.MenuActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:fontFamily="serif-monospace"
+        android:text="MENU GŁÓWNE"
+        android:textColor="@android:color/white"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/buFine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/bBase"
+        android:layout_alignLeft="@+id/bBase"
+        android:layout_alignRight="@+id/bBase"
+        android:layout_alignStart="@+id/bBase"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="48dp"
+        android:text="Wystaw Mandat" />
+
+    <Button
+        android:id="@+id/bBase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/bUser"
+        android:layout_alignLeft="@+id/bUser"
+        android:layout_alignRight="@+id/bUser"
+        android:layout_alignStart="@+id/bUser"
+        android:layout_below="@+id/buFine"
+        android:layout_marginTop="35dp"
+        android:text="Baza Mandatów" />
+
+    <Button
+        android:id="@+id/bUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/bLog"
+        android:layout_alignLeft="@+id/bLog"
+        android:layout_alignRight="@+id/bLog"
+        android:layout_alignStart="@+id/bLog"
+        android:layout_below="@+id/bBase"
+        android:layout_marginTop="42dp"
+        android:text="Dane użytkownika" />
+
+    <Button
+        android:id="@+id/bLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/bUser"
+        android:layout_marginTop="37dp"
+        android:text="wyloguj" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/bLog"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/bLog"
+        android:layout_marginBottom="16dp"
+        android:text="Mobilny Mandat 2017"
+        android:textColor="@android:color/white" />
+</RelativeLayout>

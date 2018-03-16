@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kowalczyk.arek.mobilnymandat.LoginActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/alToolbar"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="?attr/actionBarTheme" >
+
+        <TextView
+            android:id="@+id/alText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Zaloguj się"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/alTextPass"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="Hasło"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="146dp"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/alTextLogin"
+        android:layout_alignLeft="@+id/alTextLogin"
+        android:layout_alignStart="@+id/alTextLogin" />
+
+    <EditText
+        android:id="@+id/alTextLogin"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="Login"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="89dp"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/alToolbar"
+        android:layout_alignLeft="@+id/alButtonLog"
+        android:layout_alignStart="@+id/alButtonLog" />
+
+    <Button
+        android:id="@+id/alButtonLog"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Imię i Nazwisko"
+        android:text="ZALOGUJ"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="207dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/alTextPass"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/alTextReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nie masz konta? Zarejestruj się!"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="275dp"
+        android:layout_below="@+id/alButtonLog"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp" />
+
+</RelativeLayout>
